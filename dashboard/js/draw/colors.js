@@ -92,6 +92,7 @@ define([
       case 'DOWN*':
       case 'DOWN*+DRAIN':
       case 'DOWN+DRAIN':
+      case 'DOWN+DRAIN+POWER':
         stateColor = colors.LED.DOWN;
         nodeColor = colors.LED.UNAVAILABLE;
         break;
