@@ -149,9 +149,8 @@ class CORSForbidden(Forbidden):
         return [('Content-Type', 'text/html'),
                 ('Access-Control-Allow-Origin', '*')]
 
-
-abort.mapping.update({403: CORSForbidden})
-
+# Not in curent Flask - abort is a function not Aborter
+#abort.mapping.update({403: CORSForbidden})
 
 class User(object):
     def __init__(self, login, role, groups=None):
